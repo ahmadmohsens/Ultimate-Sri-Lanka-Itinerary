@@ -15,6 +15,8 @@ import {
   Heart
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface HomePageProps {
   colors: {
     green: string;
@@ -290,6 +292,17 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
           </div>
         </div>
       </section>
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="جاهز تشوف الخطة؟"
+        description="تعال نشوف خيارات المسار المتاحة ونقرر أنهي واحد أنسب لرحلتك."
+        nextPage="route"
+        buttonText="اكتشف المسار"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

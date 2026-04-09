@@ -29,6 +29,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface WeligamaPageProps {
   colors: {
     green: string;
@@ -39,9 +41,11 @@ interface WeligamaPageProps {
   };
   openMap: (query: string) => void;
   weligamaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMapLocations }) => {
+const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -975,6 +979,17 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="Journey's End"
+        description="Your Sri Lankan adventure comes to a close. We hope this itinerary helped you discover the magic of the island."
+        nextPage="home"
+        buttonText="Back to Home"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

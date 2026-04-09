@@ -22,6 +22,8 @@ import {
   Map
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface ColomboPageProps {
   colors: {
     green: string;
@@ -32,9 +34,11 @@ interface ColomboPageProps {
   };
   openMap: (query: string) => void;
   colomboMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLocations }) => {
+const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -726,6 +730,18 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="رايحين للمثلث الثقافي"
+        description="المحطة الجاية: سيجيريا. استعد لحصون صخرية قديمة، مناظر خيالية، وشوية مغامرة."
+        nextPage="sigiriya"
+        buttonText="استكشف سيجيريا"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

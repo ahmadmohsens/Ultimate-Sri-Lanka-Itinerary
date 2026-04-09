@@ -22,6 +22,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface EllaPageProps {
   colors: {
     green: string;
@@ -32,9 +34,11 @@ interface EllaPageProps {
   };
   openMap: (query: string) => void;
   ellaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const EllaPageAr: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }) => {
+const EllaPageAr: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -534,6 +538,18 @@ const EllaPageAr: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="وقت البحر جه"
+        description="المحطة الجاية: هيريكيتيا. سيب الجبال وروح للمحيط. ركمجة، نخل، وخليج مخفي على شكل حدوة حصان."
+        nextPage="hiriketiya"
+        buttonText="استكشف هيريكيتيا"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

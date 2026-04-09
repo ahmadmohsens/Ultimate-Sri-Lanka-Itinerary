@@ -17,6 +17,8 @@ import {
   Info
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface SigiriyaPageProps {
   colors: {
     green: string;
@@ -27,9 +29,11 @@ interface SigiriyaPageProps {
   };
   openMap: (query: string) => void;
   sigiriyaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriyaMapLocations }) => {
+const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriyaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -462,6 +466,18 @@ const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriya
           </div>
         </div>
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="العاصمة الثقافية"
+        description="المحطة الجاية: كاندي. عيش التجربة الروحية في قلب سريلانكا، بجمال معابدها وبحيرتها."
+        nextPage="kandy"
+        buttonText="استكشف كاندي"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

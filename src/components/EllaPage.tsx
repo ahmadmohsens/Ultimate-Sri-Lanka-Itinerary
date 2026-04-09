@@ -22,6 +22,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface EllaPageProps {
   colors: {
     green: string;
@@ -32,9 +34,11 @@ interface EllaPageProps {
   };
   openMap: (query: string) => void;
   ellaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }) => {
+const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -534,6 +538,17 @@ const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="Time for the Beach"
+        description="Next stop: Hiriketiya. Swap the mountains for the ocean. Think surfing, palm trees, and hidden horseshoe bays."
+        nextPage="hiriketiya"
+        buttonText="Explore Hiriketiya"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

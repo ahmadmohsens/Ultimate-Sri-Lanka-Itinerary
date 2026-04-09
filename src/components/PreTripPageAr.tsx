@@ -23,6 +23,8 @@ import {
   FileCheck
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface PreTripPageProps {
   colors: {
     green: string;
@@ -31,9 +33,11 @@ interface PreTripPageProps {
     beige: string;
     charcoal: string;
   };
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
+const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -448,6 +452,18 @@ const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
           </div>
         </div>
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="أهلاً بيك في سريلانكا!"
+        description="رحلتك هتبدأ من العاصمة الزحمة والجميلة. تعال نشوف هتعمل إيه في أول أيامك في كولومبو."
+        nextPage="colombo"
+        buttonText="استكشف كولومبو"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

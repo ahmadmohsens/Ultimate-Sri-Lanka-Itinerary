@@ -16,6 +16,8 @@ import {
   Map
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface HomePageProps {
   colors: {
     green: string;
@@ -291,6 +293,16 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
           </div>
         </div>
       </section>
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="Ready to see the plan?"
+        description="Let's dive into the two route options and see which one fits your trip length best."
+        nextPage="route"
+        buttonText="Discover the Route"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

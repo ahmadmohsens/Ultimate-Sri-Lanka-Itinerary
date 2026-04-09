@@ -29,6 +29,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface WeligamaPageArProps {
   colors: {
     green: string;
@@ -39,9 +41,11 @@ interface WeligamaPageArProps {
   };
   openMap: (query: string) => void;
   weligamaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weligamaMapLocations }) => {
+const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weligamaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -976,6 +980,18 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="نهاية الرحلة"
+        description="مغامرتك في سريلانكا وصلت لنهايتها. نتمنى إن البرنامج ده يكون ساعدك تكتشف سحر الجزيرة."
+        nextPage="home"
+        buttonText="الرجوع للرئيسية"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

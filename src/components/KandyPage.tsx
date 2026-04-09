@@ -20,6 +20,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface KandyPageProps {
   colors: {
     green: string;
@@ -30,9 +32,11 @@ interface KandyPageProps {
   };
   openMap: (query: string) => void;
   kandyMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const KandyPage: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocations }) => {
+const KandyPage: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -488,6 +492,17 @@ const KandyPage: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocation
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="The Most Scenic Train Ride"
+        description="Next stop: Ella. Get ready for the famous blue train, misty mountains, and the Nine Arch Bridge."
+        nextPage="ella"
+        buttonText="Explore Ella"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

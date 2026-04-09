@@ -18,6 +18,8 @@ import {
   Info
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface HiriketiyaPageProps {
   colors: {
     green: string;
@@ -28,9 +30,11 @@ interface HiriketiyaPageProps {
   };
   openMap: (query: string) => void;
   hiriketiyaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const HiriketiyaPage: React.FC<HiriketiyaPageProps> = ({ colors, openMap, hiriketiyaMapLocations }) => {
+const HiriketiyaPage: React.FC<HiriketiyaPageProps> = ({ colors, openMap, hiriketiyaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -471,6 +475,17 @@ const HiriketiyaPage: React.FC<HiriketiyaPageProps> = ({ colors, openMap, hirike
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="The Surf Hub"
+        description="Next stop: Weligama. Perfect your surf, enjoy the sunset at Mirissa, and soak in the vibrant south coast energy."
+        nextPage="weligama"
+        buttonText="Explore Weligama"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

@@ -13,6 +13,8 @@ import {
   Train
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface RoutePageProps {
   colors: {
     green: string;
@@ -21,9 +23,11 @@ interface RoutePageProps {
     beige: string;
     charcoal: string;
   };
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
+const RoutePageAr: React.FC<RoutePageProps> = ({ colors, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -377,6 +381,18 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
 
         </div>
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="جاهز للتجهيزات؟"
+        description="قبل ما تسافر، فيه شوية حاجات مهمة لازم تخلصها. من أول الفيزا لحد الشنط، تعال نجهزك."
+        nextPage="pretrip"
+        buttonText="تجهيزات ما قبل الرحلة"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

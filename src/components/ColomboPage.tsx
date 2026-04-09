@@ -22,6 +22,8 @@ import {
   Map
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface ColomboPageProps {
   colors: {
     green: string;
@@ -32,9 +34,11 @@ interface ColomboPageProps {
   };
   openMap: (query: string) => void;
   colomboMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLocations }) => {
+const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -728,6 +732,16 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
         </div>
       </section>
 
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="Heading to the Cultural Triangle"
+        description="Next stop: Sigiriya. Get ready for ancient rock fortresses, stunning views, and a touch of adventure."
+        nextPage="sigiriya"
+        buttonText="Explore Sigiriya"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

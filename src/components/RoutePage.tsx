@@ -13,6 +13,8 @@ import {
   Train
 } from 'lucide-react';
 
+import NextStepCard from './NextStepCard';
+
 interface RoutePageProps {
   colors: {
     green: string;
@@ -21,9 +23,11 @@ interface RoutePageProps {
     beige: string;
     charcoal: string;
   };
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
+const RoutePage: React.FC<RoutePageProps> = ({ colors, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -377,6 +381,17 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
 
         </div>
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="Ready to prepare?"
+        description="Before you fly, there are a few essentials you need to handle. From visas to packing, let's get you ready."
+        nextPage="pretrip"
+        buttonText="Pre-Trip Planning"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

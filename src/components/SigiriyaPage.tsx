@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface SigiriyaPageProps {
   colors: {
     green: string;
@@ -28,9 +30,11 @@ interface SigiriyaPageProps {
   };
   openMap: (query: string) => void;
   sigiriyaMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const SigiriyaPage: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriyaMapLocations }) => {
+const SigiriyaPage: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriyaMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -468,6 +472,17 @@ const SigiriyaPage: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriyaMa
           </div>
         </div>
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="The Cultural Capital"
+        description="Next stop: Kandy. Experience the spiritual heart of Sri Lanka, with its sacred temples and beautiful lake."
+        nextPage="kandy"
+        buttonText="Explore Kandy"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+      />
     </div>
   );
 };

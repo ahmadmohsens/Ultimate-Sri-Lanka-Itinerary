@@ -20,6 +20,8 @@ import {
 
 import LocationMap from './LocationMap';
 
+import NextStepCard from './NextStepCard';
+
 interface KandyPageProps {
   colors: {
     green: string;
@@ -30,9 +32,11 @@ interface KandyPageProps {
   };
   openMap: (query: string) => void;
   kandyMapLocations: any[];
+  setCurrentPage: (page: string) => void;
+  scrollToTop: () => void;
 }
 
-const KandyPageAr: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocations }) => {
+const KandyPageAr: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocations, setCurrentPage, scrollToTop }) => {
   const customShadow = "0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03)";
 
   return (
@@ -488,6 +492,18 @@ const KandyPageAr: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocati
         </div>
 
       </section>
+
+      {/* --- NEXT STEP SECTION --- */}
+      <NextStepCard 
+        title="أجمل رحلة قطر في العالم"
+        description="المحطة الجاية: إيلا. استعد لقطر إيلا الشهير، الجبال اللي وسط السحاب، وجسر الأقواس التسعة."
+        nextPage="ella"
+        buttonText="استكشف إيلا"
+        setCurrentPage={setCurrentPage}
+        scrollToTop={scrollToTop}
+        colors={colors}
+        isAr={true}
+      />
     </div>
   );
 };

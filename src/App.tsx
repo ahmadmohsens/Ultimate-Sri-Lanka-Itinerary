@@ -208,14 +208,14 @@ export default function App() {
       <main className={`max-w-7xl mx-auto px-4 md:px-12 mt-24 transition-all duration-1000 transform ${isAtTop ? 'translate-y-0 opacity-100' : scrollDir === 'up' ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-95'}`}>
         
         {currentPage === 'home' && (isAr ? <HomePageAr colors={colors} isAtTop={isAtTop} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} cities={cities} /> : <HomePage colors={colors} isAtTop={isAtTop} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} cities={cities} />)}
-        {currentPage === 'pretrip' && (isAr ? <PreTripPageAr colors={colors} /> : <PreTripPage colors={colors} />)}
-        {currentPage === 'route' && (isAr ? <RoutePageAr colors={colors} /> : <RoutePage colors={colors} />)}
-        {currentPage === 'colombo' && (isAr ? <ColomboPageAr colors={colors} openMap={openMap} colomboMapLocations={colomboMapLocations} /> : <ColomboPage colors={colors} openMap={openMap} colomboMapLocations={colomboMapLocations} />)}
-        {currentPage === 'sigiriya' && (language === 'en' ? <SigiriyaPage colors={colors} openMap={openMap} sigiriyaMapLocations={sigiriyaMapLocations} /> : <SigiriyaPageAr colors={colors} openMap={openMap} sigiriyaMapLocations={sigiriyaMapLocations} />)}
-        {currentPage === 'kandy' && (language === 'en' ? <KandyPage colors={colors} openMap={openMap} kandyMapLocations={kandyMapLocations} /> : <KandyPageAr colors={colors} openMap={openMap} kandyMapLocations={kandyMapLocations} />)}
-        {currentPage === 'ella' && (language === 'en' ? <EllaPage colors={colors} openMap={openMap} ellaMapLocations={ellaMapLocations} /> : <EllaPageAr colors={colors} openMap={openMap} ellaMapLocations={ellaMapLocations} />)}
-        {currentPage === 'hiriketiya' && (language === 'en' ? <HiriketiyaPage colors={colors} openMap={openMap} hiriketiyaMapLocations={hiriketiyaMapLocations} /> : <HiriketiyaPageAr colors={colors} openMap={openMap} hiriketiyaMapLocations={hiriketiyaMapLocations} />)}
-        {currentPage === 'weligama' && (language === 'en' ? <WeligamaPage colors={colors} openMap={openMap} weligamaMapLocations={weligamaMapLocations} /> : <WeligamaPageAr colors={colors} openMap={openMap} weligamaMapLocations={weligamaMapLocations} />)}
+        {currentPage === 'pretrip' && (isAr ? <PreTripPageAr colors={colors} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <PreTripPage colors={colors} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'route' && (isAr ? <RoutePageAr colors={colors} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <RoutePage colors={colors} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'colombo' && (isAr ? <ColomboPageAr colors={colors} openMap={openMap} colomboMapLocations={colomboMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <ColomboPage colors={colors} openMap={openMap} colomboMapLocations={colomboMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'sigiriya' && (language === 'en' ? <SigiriyaPage colors={colors} openMap={openMap} sigiriyaMapLocations={sigiriyaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <SigiriyaPageAr colors={colors} openMap={openMap} sigiriyaMapLocations={sigiriyaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'kandy' && (language === 'en' ? <KandyPage colors={colors} openMap={openMap} kandyMapLocations={kandyMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <KandyPageAr colors={colors} openMap={openMap} kandyMapLocations={kandyMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'ella' && (language === 'en' ? <EllaPage colors={colors} openMap={openMap} ellaMapLocations={ellaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <EllaPageAr colors={colors} openMap={openMap} ellaMapLocations={ellaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'hiriketiya' && (language === 'en' ? <HiriketiyaPage colors={colors} openMap={openMap} hiriketiyaMapLocations={hiriketiyaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <HiriketiyaPageAr colors={colors} openMap={openMap} hiriketiyaMapLocations={hiriketiyaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
+        {currentPage === 'weligama' && (language === 'en' ? <WeligamaPage colors={colors} openMap={openMap} weligamaMapLocations={weligamaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} /> : <WeligamaPageAr colors={colors} openMap={openMap} weligamaMapLocations={weligamaMapLocations} setCurrentPage={setCurrentPage} scrollToTop={scrollToTop} />)}
 
         {/* --- FOOTER --- */}
         <footer className="border-t border-gray-200 pt-10 pb-20 mt-12">
@@ -243,7 +243,7 @@ export default function App() {
       </main>
 
       {/* --- FLOATING NAVIGATION BAR --- */}
-      <div className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ${isVisible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-90'}`}>
+      <div className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 hidden md:block ${isVisible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-90'}`}>
         <div style={{ backgroundColor: colors.charcoal }} className="p-1.5 rounded-full shadow-2xl flex items-center gap-1 border border-white/10 overflow-x-auto no-scrollbar max-w-[95vw]">
           {cities.map((city, idx) => (
             <button 
