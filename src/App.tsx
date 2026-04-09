@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  Navigation,
+  Plane,
   ChevronDown,
   ArrowUp,
   MapPin,
@@ -102,9 +102,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           <div className="flex items-center gap-3 font-bold text-xl tracking-tight cursor-pointer" onClick={() => { setCurrentPage('home'); scrollToTop(); }}>
             <div className="text-white p-1.5 rounded-lg" style={{ backgroundColor: colors.terracotta }}>
-              <Navigation size={18} fill="currentColor" className={`transform ${isAr ? '-rotate-45' : 'rotate-45'}`} />
+              <Plane size={18} fill="currentColor" className={`transform ${isAr ? '-rotate-45' : 'rotate-45'}`} />
             </div>
-            {isAr ? 'لانكا روت' : 'LankaRoute'}
+            {isAr ? 'سريلانكا مع محسن' : 'Sri Lanka by Mohsen'}
           </div>
           
           <div className="hidden md:flex items-center gap-1 border border-gray-100 bg-white/50 rounded-full p-1 text-[11px] font-black uppercase tracking-wider relative">

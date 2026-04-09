@@ -43,7 +43,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
           <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
             دليل <br/> رحلتك <br/>
             <span style={{ color: '#fa820c' }}>لسريلانكا</span> <br/>
-            من الألف للياء.
+            من للألف للياء.
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-md leading-relaxed">
             دليلك الشامل خطوة بخطوة من أول ما توصل لحد ما تمشي، متصمم عشان يسهل عليك الرحلة ويوفر ميزانيتك.
