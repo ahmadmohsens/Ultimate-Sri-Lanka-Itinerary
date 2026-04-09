@@ -58,7 +58,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل ١٢
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -114,7 +114,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
                  <p className="text-gray-600 m-0 text-sm">غالباً حوالي <strong className="text-[#292926]">3.5 لـ 4.5 ساعات</strong> وده أحسن اختيار عموماً للمسار ده.</p>
                  <p className="text-gray-600 m-0 text-sm"><strong className="text-[#292926]">السعر:</strong> أسعار العربيات الصغيرة حالياً تقريباً <strong className="text-[#292926]">43 لـ 67 دولار</strong> للعربية كلها.</p>
                  <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">خيارات الحجز</span>
+                    <span className="text-[14px] font-bold text-gray-600 uppercase tracking-widest">خيارات الحجز</span>
                     <a href="https://www.ellabudgettaxi.com/taxi/23/ella-to-from-weligama" target="_blank" rel="noopener noreferrer" className="text-sm font-bold flex items-center gap-1.5 hover:opacity-70 transition-opacity" style={{ color: colors.terracotta }}>
                       Ella Budget Taxi <ExternalLink size={14} />
                     </a>
@@ -139,7 +139,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
                  <p className="text-gray-600 m-0 text-sm">أسهل اختيار للجزء ده لو عايز توصيلة مباشرة. اسأل فندقك الأول.</p>
                  <p className="text-gray-600 m-0 text-sm"><strong className="text-[#292926]">الوقت:</strong> غالباً حوالي <strong className="text-[#292926]">ساعة لساعة ونص</strong>.</p>
                  <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">أرقام تواصل</span>
+                    <span className="text-[14px] font-bold text-gray-600 uppercase tracking-widest">أرقام تواصل</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Senu Cabs (+94 77 05 28 583)</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Mr.Taxi.lk (+94 76 88 79 009)</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Visit Sri Lanka Taxi (+94 76 322 2239)</span>
@@ -870,7 +870,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">نسخة اقتصادية</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">نسخة اقتصادية</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 45 لـ 75 دولار<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">إجمالي للفرد</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>شامل:</strong> إقامة اقتصادية + أكل محلي + أيام بحر ببلاش + حصن جالي
@@ -878,7 +878,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">نسخة متوسطة</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">نسخة متوسطة</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 65 لـ 110 دولار<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">إجمالي للفرد</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>شامل:</strong> إقامة اقتصادية + يوم Kai + عشاء أقوى + المعالم الأساسية اللي ببلاش
@@ -967,7 +967,7 @@ const WeligamaPageAr: React.FC<WeligamaPageArProps> = ({ colors, openMap, weliga
           <div style={{ backgroundColor: colors.yellow + '15', borderColor: colors.yellow + '30' }} className="p-6 md:p-8 rounded-3xl border flex gap-5 items-start mt-8">
             <Info size={24} style={{ color: colors.yellow }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>نصيحة ذكية</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>نصيحة ذكية</span>
               <p className="text-[#292926] font-medium text-lg m-0">
                 خلي الليلة الأخيرة في ويليجاما سهلة. اتعشى قريب من فندقك، حاسب على الأوضة بالليل لو أمكن، ولم شنطك كلها قبل ما تنام عشان صبحية السفر تبقى بسيطة.
               </p>

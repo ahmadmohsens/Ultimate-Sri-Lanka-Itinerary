@@ -4,7 +4,9 @@ import {
   ChevronDown,
   ArrowUp,
   MapPin,
-  X
+  X,
+  Menu,
+  Palmtree
 } from 'lucide-react';
 import HomePage from './components/HomePage';
 import HomePageAr from './components/HomePageAr';
@@ -39,6 +41,7 @@ export default function App() {
   const [language, setLanguage] = useState<'en' | 'ar'>('en');
   const [isVisible, setIsVisible] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollDir, setScrollDir] = useState("up");
   const [activeMapQuery, setActiveMapQuery] = useState<string | null>(null);
 
@@ -80,6 +83,7 @@ export default function App() {
       lastScrollY = currentScrollY;
       setIsVisible(currentScrollY > 300);
       setIsAtTop(currentScrollY < 50);
+      if (currentScrollY > 50) setIsMobileMenuOpen(false);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -97,10 +101,10 @@ export default function App() {
           isAtTop 
           ? 'bg-white/0 border-transparent py-6' 
           : 'bg-[#F9F8F6]/95 backdrop-blur-md border-gray-200 py-3 shadow-sm'
-        }`}
+        } ${isMobileMenuOpen ? 'bg-white border-gray-200' : ''}`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <div className="flex items-center gap-3 font-bold text-xl tracking-tight cursor-pointer" onClick={() => { setCurrentPage('home'); scrollToTop(); }}>
+          <div className="flex items-center gap-3 font-bold text-xl tracking-tight cursor-pointer" onClick={() => { setCurrentPage('home'); scrollToTop(); setIsMobileMenuOpen(false); }}>
             <div className="text-white p-1.5 rounded-lg" style={{ backgroundColor: colors.terracotta }}>
               <Plane size={18} fill="currentColor" className={`transform ${isAr ? '-rotate-45' : 'rotate-45'}`} />
             </div>
@@ -110,26 +114,26 @@ export default function App() {
           <div className="hidden md:flex items-center gap-1 border border-gray-100 bg-white/50 rounded-full p-1 text-[11px] font-black uppercase tracking-wider relative">
             <button 
               onClick={() => setCurrentPage('home')} 
-              className={`px-5 py-2 rounded-full transition-all ${currentPage === 'home' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
+              className={`px-5 py-2 rounded-full transition-all text-[15px] ${currentPage === 'home' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
             >
               {isAr ? 'ابدأ هنا' : 'Start Here'}
             </button>
             <button 
               onClick={() => setCurrentPage('route')} 
-              className={`px-5 py-2 rounded-full transition-all ${currentPage === 'route' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
+              className={`px-5 py-2 rounded-full transition-all text-[15px] ${currentPage === 'route' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
             >
               {isAr ? 'المسار' : 'The Route'}
             </button>
             <button 
               onClick={() => setCurrentPage('pretrip')} 
-              className={`px-5 py-2 rounded-full transition-all ${currentPage === 'pretrip' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
+              className={`px-5 py-2 rounded-full transition-all text-[15px] ${currentPage === 'pretrip' ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}
             >
               {isAr ? 'قبل الرحلة' : 'Pre-Trip'}
             </button>
             
             {/* Cities Dropdown */}
             <div className="relative group">
-              <button className={`px-5 py-2 rounded-full transition-all flex items-center gap-1 cursor-pointer ${cities.some(c => c.id === currentPage) ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}>
+              <button className={`px-5 py-2 rounded-full transition-all flex items-center gap-1 cursor-pointer text-[15px] ${cities.some(c => c.id === currentPage) ? 'bg-[#292926] text-white shadow-md' : 'text-gray-400 hover:text-[#292926]'}`}>
                 {isAr ? 'المدن' : 'Cities'} <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
               </button>
               <div className={`absolute top-full mt-1 ${isAr ? 'left-0' : 'right-0'} w-48 bg-white border border-gray-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col p-2 z-[150]`}>
@@ -146,9 +150,57 @@ export default function App() {
             </div>
           </div>
           
-          <div className="flex items-center gap-3 text-[10px] font-black border border-gray-100 bg-white/50 rounded-full px-4 py-2 uppercase tracking-widest">
-            <button onClick={() => setLanguage('en')} className={!isAr ? 'text-[#292926]' : 'text-gray-300'}>ENG</button>
-            <button onClick={() => setLanguage('ar')} className={isAr ? 'text-[#292926]' : 'text-gray-300'}>عربي</button>
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="flex items-center gap-2 text-[13px] font-black border border-gray-100 bg-white/50 rounded-full px-3 md:px-4 py-2 uppercase tracking-widest">
+              <button onClick={() => { setLanguage('en'); setIsMobileMenuOpen(false); }} className={`transition-colors ${!isAr ? 'text-[#292926]' : 'text-gray-300 hover:text-gray-500'}`}>ENG</button>
+              <button onClick={() => { setLanguage('ar'); setIsMobileMenuOpen(false); }} className={`transition-colors ${isAr ? 'text-[#292926]' : 'text-gray-300 hover:text-gray-500'}`}>عربي</button>
+            </div>
+
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden w-10 h-10 flex items-center justify-center bg-white border border-gray-100 rounded-full text-[#292926] shadow-sm"
+            >
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu Overlay */}
+        <div className={`md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="p-6 flex flex-col gap-4">
+            <button 
+              onClick={() => { setCurrentPage('home'); scrollToTop(); setIsMobileMenuOpen(false); }}
+              className={`flex items-center justify-between p-4 rounded-2xl transition-all ${currentPage === 'home' ? 'bg-[#292926] text-white' : 'bg-gray-50 text-gray-700'}`}
+            >
+              <span className="font-bold uppercase tracking-widest text-sm">{isAr ? 'ابدأ هنا' : 'Start Here'}</span>
+            </button>
+            <button 
+              onClick={() => { setCurrentPage('route'); scrollToTop(); setIsMobileMenuOpen(false); }}
+              className={`flex items-center justify-between p-4 rounded-2xl transition-all ${currentPage === 'route' ? 'bg-[#292926] text-white' : 'bg-gray-50 text-gray-700'}`}
+            >
+              <span className="font-bold uppercase tracking-widest text-sm">{isAr ? 'المسار' : 'The Route'}</span>
+            </button>
+            <button 
+              onClick={() => { setCurrentPage('pretrip'); scrollToTop(); setIsMobileMenuOpen(false); }}
+              className={`flex items-center justify-between p-4 rounded-2xl transition-all ${currentPage === 'pretrip' ? 'bg-[#292926] text-white' : 'bg-gray-50 text-gray-700'}`}
+            >
+              <span className="font-bold uppercase tracking-widest text-sm">{isAr ? 'قبل الرحلة' : 'Pre-Trip'}</span>
+            </button>
+            
+            <div className="mt-2">
+              <span className="text-[14px] font-black uppercase tracking-[0.3em] text-gray-400 mb-4 block px-2">{isAr ? 'المدن' : 'Cities'}</span>
+              <div className="grid grid-cols-2 gap-3">
+                {cities.map(city => (
+                  <button 
+                    key={city.id}
+                    onClick={() => { setCurrentPage(city.id); scrollToTop(); setIsMobileMenuOpen(false); }}
+                    className={`p-3 rounded-xl text-xs font-bold uppercase tracking-wider text-center border transition-all ${currentPage === city.id ? 'bg-[#292926] text-white border-[#292926]' : 'bg-white text-gray-600 border-gray-100'}`}
+                  >
+                    {isAr ? city.nameAr || city.name : city.name}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -177,13 +229,13 @@ export default function App() {
             <div>
               <button 
                 onClick={scrollToTop}
-                className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-[#292926] transition-all hover:-translate-y-1"
+                className="flex items-center gap-2 text-[14px] font-black uppercase tracking-widest text-gray-400 hover:text-[#292926] transition-all hover:-translate-y-1"
               >
                 {isAr ? 'الرجوع لأعلى' : 'Back to top'} <ArrowUp size={14} />
               </button>
             </div>
           </div>
-          <div className="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em]">
+          <div className="text-[14px] text-gray-400 font-black uppercase tracking-[0.2em]">
             {isAr ? '© 2026 لانكا روت.' : '© 2026 LankaRoute.'}
           </div>
         </footer>
@@ -197,7 +249,7 @@ export default function App() {
             <button 
               key={idx}
               onClick={() => setCurrentPage(city.id)}
-              className={`whitespace-nowrap px-5 py-2.5 rounded-full text-white text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95 ${currentPage === city.id ? 'bg-white/20' : ''}`}
+              className={`whitespace-nowrap px-5 py-2.5 rounded-full text-white text-[14px] font-black uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95 ${currentPage === city.id ? 'bg-white/20' : ''}`}
             >
               {isAr ? city.nameAr || city.name : city.name}
             </button>

@@ -48,7 +48,7 @@ const KandyPageAr: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocati
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل 9
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -223,7 +223,7 @@ const KandyPageAr: React.FC<KandyPageProps> = ({ colors, openMap, kandyMapLocati
           <div style={{ backgroundColor: colors.beige + '40' }} className="rounded-[2.5rem] p-6 md:p-8 flex gap-5 items-start border border-white">
             <Info size={24} style={{ color: colors.charcoal }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة الحجز</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة الحجز</span>
               <p className="text-gray-700 leading-relaxed font-medium m-0 text-lg">
                 الأسعار دي ممكن تتغير كتير حسب التواريخ ونوع الأوضة. لو لقيت حاجة عجبتك، احجزها بدري وخلي عندك خيار الإلغاء المجاني لو أمكن.
               </p>

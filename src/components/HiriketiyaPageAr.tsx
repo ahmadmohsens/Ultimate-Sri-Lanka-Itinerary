@@ -47,7 +47,7 @@ const HiriketiyaPageAr: React.FC<HiriketiyaPageArProps> = ({ colors, openMap, hi
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-8 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-8 block text-white/90">
               الفصل ١١
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">

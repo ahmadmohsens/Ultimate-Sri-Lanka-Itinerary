@@ -130,7 +130,7 @@ const LocationMap: React.FC<LocationMapProps> = ({ title, locations, colors, onO
                   >
                     <X size={16} />
                   </button>
-                  <span className="text-[10px] font-black uppercase tracking-widest block mb-1.5" style={{ color: getTypeColor(loc.type) }}>
+                  <span className="text-[14px] font-black uppercase tracking-widest block mb-1.5" style={{ color: getTypeColor(loc.type) }}>
                     {loc.type}
                   </span>
                   <h5 className="font-extrabold text-sm text-[#292926] leading-tight mb-1 pr-4">{loc.name}</h5>

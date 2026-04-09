@@ -50,7 +50,7 @@ const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 left-12 md:bottom-16 md:left-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               Chapter 10
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -497,7 +497,7 @@ const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Budget Version</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Budget Version</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $40 to $60<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>Includes:</strong> Budget stay + local meals + main free sights
@@ -505,7 +505,7 @@ const EllaPage: React.FC<EllaPageProps> = ({ colors, openMap, ellaMapLocations }
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Mid-range Version</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Mid-range Version</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $55 to $80<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>Includes:</strong> Budget stay + one café meal + one nicer meal + main free sights

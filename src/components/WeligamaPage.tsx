@@ -58,7 +58,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 left-12 md:bottom-16 md:left-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               Chapter 12
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -117,7 +117,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
                  <p className="text-gray-600 m-0 text-sm">usually about <strong className="text-[#292926]">3.5 to 4.5 hours</strong> and the best overall choice for this route.</p>
                  <p className="text-gray-600 m-0 text-sm"><strong className="text-[#292926]">Price:</strong> current small-car quotes are roughly <strong className="text-[#292926]">$43 to $67</strong> for the whole car.</p>
                  <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Booking options</span>
+                    <span className="text-[14px] font-bold text-gray-600 uppercase tracking-widest">Booking options</span>
                     <a href="https://www.ellabudgettaxi.com/taxi/23/ella-to-from-weligama" target="_blank" rel="noopener noreferrer" className="text-sm font-bold flex items-center gap-1.5 hover:opacity-70 transition-opacity" style={{ color: colors.terracotta }}>
                       Ella Budget Taxi <ExternalLink size={14} />
                     </a>
@@ -142,7 +142,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
                  <p className="text-gray-600 m-0 text-sm">the easiest option for this stretch if you want a direct transfer. Check with your hotel first.</p>
                  <p className="text-gray-600 m-0 text-sm"><strong className="text-[#292926]">Timing:</strong> usually about <strong className="text-[#292926]">1 to 1.5 hours</strong>.</p>
                  <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
-                    <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Contacts</span>
+                    <span className="text-[14px] font-bold text-gray-600 uppercase tracking-widest">Contacts</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Senu Cabs (+94 77 05 28 583)</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Mr.Taxi.lk (+94 76 88 79 009)</span>
                     <span className="text-sm font-bold flex items-center gap-1.5" style={{ color: colors.green }}>Visit Sri Lanka Taxi (+94 76 322 2239)</span>
@@ -869,7 +869,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Budget Version</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Budget Version</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $45 to $75<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>Includes:</strong> Budget stay + local meals + free beach days + Galle Fort
@@ -877,7 +877,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Mid-range Version</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Mid-range Version</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $65 to $110<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>Includes:</strong> Budget stay + one Kai day + one stronger dinner + main free sights
@@ -966,7 +966,7 @@ const WeligamaPage: React.FC<WeligamaPageProps> = ({ colors, openMap, weligamaMa
           <div style={{ backgroundColor: colors.yellow + '15', borderColor: colors.yellow + '30' }} className="p-6 md:p-8 rounded-3xl border flex gap-5 items-start mt-8">
             <Info size={24} style={{ color: colors.yellow }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>Smart tip</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>Smart tip</span>
               <p className="text-[#292926] font-medium text-lg m-0">
                 Keep the final Weligama night easy. Have dinner near your hotel, settle the room bill the night before when possible, and pack fully before sleeping so departure morning stays simple.
               </p>

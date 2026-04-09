@@ -39,7 +39,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل 2
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -84,12 +84,12 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.green }} className="absolute -right-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">الجنوب والغرب</span>
-                  <span className="px-3 py-1 bg-green-50 text-green-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-green-100">أحسن موسم</span>
+                  <span className="px-3 py-1 bg-green-50 text-green-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-green-100">أحسن موسم</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">ديسمبر — أبريل</div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">بحر هادي</span>
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">سما صافية</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">بحر هادي</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">سما صافية</span>
                 </div>
               </div>
 
@@ -98,12 +98,12 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.terracotta }} className="absolute -right-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">الشمال والشرق</span>
-                  <span className="px-3 py-1 bg-orange-50 text-orange-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-orange-100">موسم قوي</span>
+                  <span className="px-3 py-1 bg-orange-50 text-orange-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-orange-100">موسم قوي</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">مايو — سبتمبر</div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">ركوب أمواج في الشرق</span>
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">جو جاف</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">ركوب أمواج في الشرق</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">جو جاف</span>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.yellow }} className="absolute -right-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">بين المواسم</span>
-                  <span className="px-3 py-1 bg-yellow-50 text-yellow-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-yellow-100">انتقالي</span>
+                  <span className="px-3 py-1 bg-yellow-50 text-yellow-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-yellow-100">انتقالي</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">أكتوبر — نوفمبر</div>
                 <div className="text-base text-gray-500 font-medium">متقلب أكتر وصعب تتوقعه في البلد كلها</div>
@@ -124,7 +124,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
                 <Info size={20} />
               </div>
               <div>
-                <span className="block font-black text-[10px] mb-1 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة مهمة</span>
+                <span className="block font-black text-[14px] mb-1 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة مهمة</span>
                 <p className="text-base text-gray-700 leading-relaxed font-bold m-0">
                   المسار ده بالظبط أحسن وقت ليه من <strong>نوفمبر لأبريل</strong>، خصوصاً إنه بيشمل الساحل الجنوبي في الآخر.
                 </p>
@@ -137,7 +137,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
       {/* --- CHAPTER 3: ROUTE SUMMARY --- */}
       <section style={{ boxShadow: customShadow }} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden mb-8 p-8 md:p-14">
         <div className="mb-10">
-          <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-400">
+          <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-600">
             الفصل 3
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
@@ -173,7 +173,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col justify-center transition-transform hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <CalendarDays size={24} className="opacity-80" />
-                <span className="font-black tracking-widest uppercase text-xs opacity-90">مسار 10 أيام</span>
+                <span className="font-black tracking-widest uppercase text-[14px] opacity-95">مسار 10 أيام</span>
               </div>
               <p className="font-bold text-lg md:text-xl leading-snug m-0" dir="ltr">
                 Colombo → Kandy → Ella → Weligama → Colombo.
@@ -182,7 +182,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col justify-center transition-transform hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <CalendarDays size={24} className="opacity-80" />
-                <span className="font-black tracking-widest uppercase text-xs opacity-90">مسار 14 يوم</span>
+                <span className="font-black tracking-widest uppercase text-[14px] opacity-95">مسار 14 يوم</span>
               </div>
               <p className="font-bold text-lg md:text-xl leading-snug m-0" dir="ltr">
                 Colombo → Sigiriya → Kandy → Ella → Hirikiteya → Weligama → Colombo
@@ -215,7 +215,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
           <div style={{ backgroundColor: colors.yellow + '15', borderColor: colors.yellow + '30' }} className="p-6 md:p-8 rounded-3xl border flex gap-5 items-start">
             <Info size={24} style={{ color: colors.yellow }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>ملاحظة سريعة</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>ملاحظة سريعة</span>
               <p className="text-[#292926] font-medium text-lg m-0">
                 تقدر تعمل المسار بالعكس، بس الاتجاه ده غالباً بيكون أحسن في الواقع: المدينة الأول، النص فيه حركة، والبحر في الآخر.
               </p>
@@ -285,7 +285,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 1: 10 Days Budget */}
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-1 block">10 أيام</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-1 block">10 أيام</span>
                 <span className="text-3xl font-extrabold block">اقتصادي <span className="text-sm font-medium text-white/70 tracking-normal normal-case mr-1">(أقل صرف)</span></span>
               </div>
               <div className="mt-8 flex items-baseline gap-2" dir="ltr">
@@ -297,7 +297,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 2: 10 Days Mid-range */}
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-1 block">10 أيام</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-1 block">10 أيام</span>
                 <span className="text-3xl font-extrabold block">متوسط</span>
               </div>
               <div className="mt-8 flex items-baseline gap-2" dir="ltr">
@@ -309,7 +309,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 3: 14 Days Budget */}
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/80 mb-1 block">14 يوم</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/95 mb-1 block">14 يوم</span>
                 <span className="text-3xl font-extrabold block">اقتصادي <span className="text-sm font-medium text-white/80 tracking-normal normal-case mr-1">(أقل صرف)</span></span>
               </div>
               <div className="mt-8 flex items-baseline gap-2" dir="ltr">
@@ -321,7 +321,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 4: 14 Days Mid-range */}
             <div style={{ backgroundColor: colors.yellow, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-[#292926] flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-[#292926]/70 mb-1 block">14 يوم</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-[#292926]/90 mb-1 block">14 يوم</span>
                 <span className="text-3xl font-extrabold block">متوسط</span>
               </div>
               <div className="mt-8 flex items-baseline gap-2" dir="ltr">
@@ -369,7 +369,7 @@ const RoutePageAr: React.FC<RoutePageProps> = ({ colors }) => {
           </div>
 
           <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="rounded-[2.5rem] p-8 md:p-12 mb-8 text-white">
-            <span className="block font-black text-[10px] mb-3 uppercase tracking-[0.2em] text-white/50">توصية</span>
+            <span className="block font-black text-[14px] mb-3 uppercase tracking-[0.2em] text-white/80">توصية</span>
             <p className="text-xl md:text-2xl leading-relaxed m-0 font-medium text-white/90">
               لمعظم المسافرين، المستوى المتوسط هو الأنسب بشكل عام. بيديك إقامات مريحة، مواصلات معقولة، ومساحة كفاية في الميزانية للتجارب الأساسية من غير ما تحس إن الرحلة غالية. وده نفس الأسلوب اللي أنا سافرت بيه وصورته في فيديوهاتي.
             </p>

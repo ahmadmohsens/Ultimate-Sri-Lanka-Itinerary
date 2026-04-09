@@ -45,7 +45,7 @@ const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriya
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل 8
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -438,7 +438,7 @@ const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriya
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">إقامة أساسية لليلتين في سيجيريا</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">إقامة أساسية لليلتين في سيجيريا</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 75 لـ 105 دولار<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">للفرد في التوتال</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>بتشمل:</strong> إقامة اقتصادية لمتوسطة لمدة <strong>ليلتين</strong>، وجبات محلية، <strong>صخرة سيجيريا</strong>، و<strong>بيدورانجالا</strong>
@@ -446,17 +446,17 @@ const SigiriyaPageAr: React.FC<SigiriyaPageProps> = ({ colors, openMap, sigiriya
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">إضافة معبد كهف دامبولا</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">إضافة معبد كهف دامبولا</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 82 لـ 112 دولار<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">للفرد في التوتال</span></span>
             </div>
 
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/80 mb-4 block">إضافة سفاري الأفيال</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/95 mb-4 block">إضافة سفاري الأفيال</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 130 لـ 160 دولار<span className="text-sm font-medium text-white/80 block mt-2 tracking-normal normal-case">للفرد في التوتال</span></span>
             </div>
 
             <div style={{ backgroundColor: colors.yellow, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-[#292926] flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-[#292926]/70 mb-4 block">إضافة جولة قرية هيريوادونا</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-[#292926]/90 mb-4 block">إضافة جولة قرية هيريوادونا</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">حوالي 115 لـ 145 دولار<span className="text-sm font-medium text-[#292926]/70 block mt-2 tracking-normal normal-case">للفرد في التوتال</span></span>
             </div>
           </div>

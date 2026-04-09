@@ -39,7 +39,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 left-12 md:bottom-16 md:left-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               Chapter 2
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -84,12 +84,12 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.green }} className="absolute -left-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">South and West</span>
-                  <span className="px-3 py-1 bg-green-50 text-green-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-green-100">Best Season</span>
+                  <span className="px-3 py-1 bg-green-50 text-green-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-green-100">Best Season</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">December — April</div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Calm Seas</span>
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Blue Skies</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Calm Seas</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Blue Skies</span>
                 </div>
               </div>
 
@@ -98,12 +98,12 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.terracotta }} className="absolute -left-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">North and East</span>
-                  <span className="px-3 py-1 bg-orange-50 text-orange-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-orange-100">Strong Season</span>
+                  <span className="px-3 py-1 bg-orange-50 text-orange-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-orange-100">Strong Season</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">May — September</div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Surfing East</span>
-                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[10px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Dry Weather</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Surfing East</span>
+                  <span className="px-3 py-1.5 bg-white border border-gray-200 text-[14px] font-bold text-gray-500 rounded-lg uppercase tracking-wider">Dry Weather</span>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
                 <div style={{ backgroundColor: colors.yellow }} className="absolute -left-[11px] top-0 w-5 h-5 rounded-full border-4 border-[#FAFAFA] shadow-md"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                   <span className="font-extrabold text-xl">Inter-monsoon</span>
-                  <span className="px-3 py-1 bg-yellow-50 text-yellow-700 text-[9px] font-black rounded-full uppercase tracking-widest border border-yellow-100">Transition</span>
+                  <span className="px-3 py-1 bg-yellow-50 text-yellow-700 text-[14px] font-black rounded-full uppercase tracking-widest border border-yellow-100">Transition</span>
                 </div>
                 <div className="text-gray-400 font-bold text-base mb-4 italic">October — November</div>
                 <div className="text-base text-gray-500 font-medium">More mixed and less predictable across the country</div>
@@ -124,7 +124,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
                 <Info size={20} />
               </div>
               <div>
-                <span className="block font-black text-[10px] mb-1 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>Important Note</span>
+                <span className="block font-black text-[14px] mb-1 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>Important Note</span>
                 <p className="text-base text-gray-700 leading-relaxed font-bold m-0">
                   This exact itinerary is best timed for <strong>November to April</strong>, especially because it includes the south coast at the end.
                 </p>
@@ -137,7 +137,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
       {/* --- CHAPTER 3: ROUTE SUMMARY --- */}
       <section style={{ boxShadow: customShadow }} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden mb-8 p-8 md:p-14">
         <div className="mb-10">
-          <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-400">
+          <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-600">
             Chapter 3
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
@@ -173,7 +173,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col justify-center transition-transform hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <CalendarDays size={24} className="opacity-80" />
-                <span className="font-black tracking-widest uppercase text-xs opacity-90">10-day Route</span>
+                <span className="font-black tracking-widest uppercase text-[14px] opacity-95">10-day Route</span>
               </div>
               <p className="font-bold text-lg md:text-xl leading-snug m-0">
                 Colombo → Kandy → Ella → Weligama → Colombo.
@@ -182,7 +182,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col justify-center transition-transform hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <CalendarDays size={24} className="opacity-80" />
-                <span className="font-black tracking-widest uppercase text-xs opacity-90">14-day Route</span>
+                <span className="font-black tracking-widest uppercase text-[14px] opacity-95">14-day Route</span>
               </div>
               <p className="font-bold text-lg md:text-xl leading-snug m-0">
                 Colombo → Sigiriya → Kandy → Ella → Hirikiteya → Weligama → Colombo
@@ -215,7 +215,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
           <div style={{ backgroundColor: colors.yellow + '15', borderColor: colors.yellow + '30' }} className="p-6 md:p-8 rounded-3xl border flex gap-5 items-start">
             <Info size={24} style={{ color: colors.yellow }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>Quick note</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.yellow }}>Quick note</span>
               <p className="text-[#292926] font-medium text-lg m-0">
                 You can do the route in reverse, but this direction usually feels better in practice: city first, active middle, beach last.
               </p>
@@ -285,7 +285,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 1: 10 Days Budget */}
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-1 block">10 Days</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-1 block">10 Days</span>
                 <span className="text-3xl font-extrabold block">Budget <span className="text-sm font-medium text-white/70 tracking-normal normal-case ml-1">(minimum spend)</span></span>
               </div>
               <div className="mt-8 flex items-baseline gap-2">
@@ -297,7 +297,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 2: 10 Days Mid-range */}
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-1 block">10 Days</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-1 block">10 Days</span>
                 <span className="text-3xl font-extrabold block">Mid-range</span>
               </div>
               <div className="mt-8 flex items-baseline gap-2">
@@ -309,7 +309,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 3: 14 Days Budget */}
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-white flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-white/80 mb-1 block">14 Days</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-white/95 mb-1 block">14 Days</span>
                 <span className="text-3xl font-extrabold block">Budget <span className="text-sm font-medium text-white/80 tracking-normal normal-case ml-1">(minimum spend)</span></span>
               </div>
               <div className="mt-8 flex items-baseline gap-2">
@@ -321,7 +321,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
             {/* Card 4: 14 Days Mid-range */}
             <div style={{ backgroundColor: colors.yellow, boxShadow: customShadow }} className="p-8 md:p-10 rounded-[2rem] text-[#292926] flex flex-col justify-between min-h-[200px] transition-transform hover:-translate-y-1">
               <div>
-                <span className="font-bold uppercase tracking-widest text-xs text-[#292926]/70 mb-1 block">14 Days</span>
+                <span className="font-bold uppercase tracking-widest text-[14px] text-[#292926]/90 mb-1 block">14 Days</span>
                 <span className="text-3xl font-extrabold block">Mid-range</span>
               </div>
               <div className="mt-8 flex items-baseline gap-2">
@@ -369,7 +369,7 @@ const RoutePage: React.FC<RoutePageProps> = ({ colors }) => {
           </div>
 
           <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="rounded-[2.5rem] p-8 md:p-12 mb-8 text-white">
-            <span className="block font-black text-[10px] mb-3 uppercase tracking-[0.2em] text-white/50">Recommendation</span>
+            <span className="block font-black text-[14px] mb-3 uppercase tracking-[0.2em] text-white/80">Recommendation</span>
             <p className="text-xl md:text-2xl leading-relaxed m-0 font-medium text-white/90">
               For most travelers, the mid-range version is the best overall fit. It gives you comfortable stays, manageable transport, and enough room in the budget for the main experiences without making the trip feel expensive. It is also the style I traveled and showed in my videos.
             </p>

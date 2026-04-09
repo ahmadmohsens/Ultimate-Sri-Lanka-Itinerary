@@ -37,7 +37,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
       {/* --- HERO SECTION --- */}
       <section className={`grid lg:grid-cols-2 gap-12 items-center mb-16 transition-all duration-1000 ${isAtTop ? 'scale-100 opacity-100' : 'scale-[0.98] opacity-90'}`}>
         <div className="flex flex-col items-start pt-8 lg:pl-8">
-          <span className="text-xs font-bold tracking-widest text-gray-500 uppercase border border-gray-200 rounded-md px-3 py-1 mb-6">
+          <span className="text-[14px] font-bold tracking-widest text-gray-700 uppercase border border-gray-200 rounded-md px-3 py-1 mb-6">
             دليل سفر متكامل
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
@@ -65,7 +65,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
           </div>
         </div>
         
-        <div className="relative h-[400px] lg:h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl group">
+        <div className="relative h-[400px] lg:h-[600px] w-full lg:w-[120%] rounded-[2.5rem] overflow-hidden shadow-2xl group">
           <img 
             src="https://images.unsplash.com/photo-1619531103472-7cc0d6479b59?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="طبيعة ساحل سريلانكا" 
@@ -75,7 +75,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
           <div className="absolute bottom-8 right-8 text-white">
             <div className="flex items-center gap-2 mb-1">
               <MapPin size={14} />
-              <span className="text-xs font-bold uppercase tracking-widest">الساحل الجنوبي</span>
+              <span className="text-[14px] font-bold uppercase tracking-widest">الساحل الجنوبي</span>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
 
       {/* --- GUIDE SECTION (1.1 What this guide includes) --- */}
       <section id="planning" className="bg-[#FAFAFA] border border-gray-100 rounded-[2.5rem] p-8 md:p-14 mb-8">
-        <span className="text-[10px] font-bold tracking-widest uppercase mb-4 block" style={{ color: colors.terracotta }}>
+        <span className="text-[14px] font-bold tracking-widest uppercase mb-4 block" style={{ color: colors.terracotta }}>
           الجزء الأول. التخطيط قبل الرحلة
         </span>
         <h2 className="text-4xl font-extrabold mb-6 tracking-tight">إزاي تستخدم الدليل ده</h2>
@@ -191,7 +191,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
         
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-             <span className="text-[10px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.terracotta }}>
+             <span className="text-[14px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.terracotta }}>
               الجزء الأول. التخطيط قبل الرحلة
             </span>
             <ul className="space-y-4">
@@ -210,7 +210,7 @@ const HomePageAr: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, 
             </ul>
           </div>
           <div>
-             <span className="text-[10px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.green }}>
+             <span className="text-[14px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.green }}>
               الجزء التاني. الوصول والرحلة مدينة بمدينة
             </span>
             <ul className="space-y-4">

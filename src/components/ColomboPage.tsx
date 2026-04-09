@@ -50,7 +50,7 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 left-12 md:bottom-16 md:left-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               Chapter 6 & 7
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -63,7 +63,7 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
       {/* --- CHAPTER 6: ARRIVAL IN COLOMBO --- */}
       <section style={{ boxShadow: customShadow }} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden mb-8 p-8 md:p-14">
         <div className="mb-10">
-          <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-400">
+          <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-600">
             Part 2. Arrival and the Trip Step by Step
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
@@ -171,7 +171,7 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
           </div>
 
           <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="rounded-[2.5rem] p-8 md:p-12 mb-8 text-white">
-            <span className="block font-black text-[10px] mb-3 uppercase tracking-[0.2em] text-white/50">My recommendation</span>
+            <span className="block font-black text-[14px] mb-3 uppercase tracking-[0.2em] text-white/80">My recommendation</span>
             <p className="text-xl leading-relaxed m-0 font-medium text-white/90">
               If you want the smoothest arrival, book a private driver or hotel pickup in advance. If you want the best balance of ease and price, use PickMe. I would leave the airport bus for budget travelers arriving light. I personally used a private driver for the whole trip, and for arrival day it was easily the smoothest option.
             </p>
@@ -304,7 +304,7 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
           <div style={{ backgroundColor: colors.beige + '40' }} className="rounded-[2.5rem] p-6 md:p-8 flex gap-5 items-start border border-white">
             <Info size={24} style={{ color: colors.charcoal }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>Booking note</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>Booking note</span>
               <p className="text-gray-700 leading-relaxed font-medium m-0 text-lg">
                 These prices are strong for Colombo, but they can move a lot depending on dates and room type. If you find one you like, book it early and keep a free-cancellation option if possible.
               </p>
@@ -708,7 +708,7 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Base 2-night Colombo stay</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Base 2-night Colombo stay</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $35 to $60<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>Includes:</strong> budget to lower-mid stay for <strong>2 nights</strong>, local meals, <strong>Gangaramaya Temple</strong>, and a mostly free sightseeing day
@@ -716,12 +716,12 @@ const ColomboPage: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMapLo
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">Add Lotus Tower version</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">Add Lotus Tower version</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $55 to $80<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">per person total</span></span>
             </div>
 
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/80 mb-4 block">Add Colombo National Museum</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/95 mb-4 block">Add Colombo National Museum</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6">about $40 to $65<span className="text-sm font-medium text-white/80 block mt-2 tracking-normal normal-case">per person total</span></span>
             </div>
           </div>

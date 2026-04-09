@@ -50,7 +50,7 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل 6 و 7
             </span>
             <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
@@ -63,7 +63,7 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
       {/* --- CHAPTER 6: ARRIVAL IN COLOMBO --- */}
       <section style={{ boxShadow: customShadow }} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden mb-8 p-8 md:p-14">
         <div className="mb-10">
-          <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-400">
+          <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-600">
             الجزء 2. الوصول والرحلة خطوة بخطوة
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
@@ -171,7 +171,7 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
           </div>
 
           <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="rounded-[2.5rem] p-8 md:p-12 mb-8 text-white">
-            <span className="block font-black text-[10px] mb-3 uppercase tracking-[0.2em] text-white/50">توصيتي</span>
+            <span className="block font-black text-[14px] mb-3 uppercase tracking-[0.2em] text-white/80">توصيتي</span>
             <p className="text-xl leading-relaxed m-0 font-medium text-white/90">
               لو عايز أسهل وصول، احجز سواق خاص أو توصيلة من الفندق مسبقاً. لو عايز أحسن توازن بين السهولة والسعر، استخدم PickMe. أنا برشح إنك تسيب أتوبيس المطار للمسافرين اللي ميزانيتهم محدودة ومعاهم شنط خفيفة. أنا شخصياً استخدمت سواق خاص للرحلة كلها، وفي يوم الوصول ده كان أسهل خيار بكتير.
             </p>
@@ -302,7 +302,7 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
           <div style={{ backgroundColor: colors.beige + '40' }} className="rounded-[2.5rem] p-6 md:p-8 flex gap-5 items-start border border-white">
             <Info size={24} style={{ color: colors.charcoal }} className="shrink-0 mt-0.5" />
             <div>
-              <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة على الحجز</span>
+              <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.charcoal }}>ملاحظة على الحجز</span>
               <p className="text-gray-700 leading-relaxed font-medium m-0 text-lg">
                 الأسعار دي ممتازة لكولومبو، بس ممكن تتغير كتير حسب التواريخ ونوع الأوضة. لو لقيت حاجة عجبتك، احجزها بدري وخلي عندك خيار الإلغاء المجاني لو أمكن.
               </p>
@@ -706,7 +706,7 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div style={{ backgroundColor: colors.green, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">إقامة أساسية لليلتين في كولومبو</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">إقامة أساسية لليلتين في كولومبو</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6" dir="ltr">حوالي $35 لـ $60<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">للشخص في التوتال</span></span>
               <p className="text-sm text-white/90 leading-relaxed mt-auto pt-6 border-t border-white/20">
                 <strong>شامل:</strong> إقامة اقتصادية لمتوسطة لمدة <strong>ليلتين</strong>، وجبات محلية، <strong>معبد جانجارامايا</strong>، ويوم سياحي أغلبه ببلاش
@@ -714,12 +714,12 @@ const ColomboPageAr: React.FC<ColomboPageProps> = ({ colors, openMap, colomboMap
             </div>
 
             <div style={{ backgroundColor: colors.charcoal, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/70 mb-4 block">نسخة ببرج لوتس</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/90 mb-4 block">نسخة ببرج لوتس</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6" dir="ltr">حوالي $55 لـ $80<span className="text-sm font-medium text-white/70 block mt-2 tracking-normal normal-case">للشخص في التوتال</span></span>
             </div>
 
             <div style={{ backgroundColor: colors.terracotta, boxShadow: customShadow }} className="p-8 rounded-[2rem] text-white flex flex-col transition-transform hover:-translate-y-1">
-              <span className="font-bold uppercase tracking-widest text-xs text-white/80 mb-4 block">نسخة بمتحف كولومبو الوطني</span>
+              <span className="font-bold uppercase tracking-widest text-[14px] text-white/95 mb-4 block">نسخة بمتحف كولومبو الوطني</span>
               <span className="text-3xl lg:text-4xl font-extrabold mb-6" dir="ltr">حوالي $40 لـ $65<span className="text-sm font-medium text-white/80 block mt-2 tracking-normal normal-case">للشخص في التوتال</span></span>
             </div>
           </div>

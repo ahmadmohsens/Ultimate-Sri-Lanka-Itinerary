@@ -38,7 +38,7 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
       {/* --- HERO SECTION --- */}
       <section className={`grid lg:grid-cols-2 gap-12 items-center mb-16 transition-all duration-1000 ${isAtTop ? 'scale-100 opacity-100' : 'scale-[0.98] opacity-90'}`}>
         <div className="flex flex-col items-start pt-8 lg:pr-8">
-          <span className="text-xs font-bold tracking-widest text-gray-500 uppercase border border-gray-200 rounded-md px-3 py-1 mb-6">
+          <span className="text-[14px] font-bold tracking-widest text-gray-700 uppercase border border-gray-200 rounded-md px-3 py-1 mb-6">
             Curated Travel Guide
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
@@ -76,7 +76,7 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
           <div className="absolute bottom-8 left-8 text-white">
             <div className="flex items-center gap-2 mb-1">
               <MapPin size={14} />
-              <span className="text-xs font-bold uppercase tracking-widest">Southern Coastline</span>
+              <span className="text-[14px] font-bold uppercase tracking-widest">Southern Coastline</span>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
 
       {/* --- GUIDE SECTION (1.1 What this guide includes) --- */}
       <section id="planning" className="bg-[#FAFAFA] border border-gray-100 rounded-[2.5rem] p-8 md:p-14 mb-8">
-        <span className="text-[10px] font-bold tracking-widest uppercase mb-4 block" style={{ color: colors.terracotta }}>
+        <span className="text-[14px] font-bold tracking-widest uppercase mb-4 block" style={{ color: colors.terracotta }}>
           Part 1. Pre-Trip Planning
         </span>
         <h2 className="text-4xl font-extrabold mb-6 tracking-tight">How to use this guide</h2>
@@ -192,7 +192,7 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
         
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-             <span className="text-[10px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.terracotta }}>
+             <span className="text-[14px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.terracotta }}>
               Part 1. Pre-Trip Planning
             </span>
             <ul className="space-y-4">
@@ -211,7 +211,7 @@ const HomePage: React.FC<HomePageProps> = ({ colors, isAtTop, setCurrentPage, sc
             </ul>
           </div>
           <div>
-             <span className="text-[10px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.green }}>
+             <span className="text-[14px] font-bold tracking-widest uppercase mb-6 block" style={{ color: colors.green }}>
               Part 2. Arrival & The Trip By City
             </span>
             <ul className="space-y-4">

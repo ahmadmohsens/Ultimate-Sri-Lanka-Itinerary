@@ -49,7 +49,7 @@ const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#292926]/90 via-[#292926]/30 to-transparent"></div>
           <div className="absolute bottom-12 right-12 md:bottom-16 md:right-14 text-white">
-            <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/70">
+            <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-white/90">
               الفصل 4
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none max-w-4xl">
@@ -141,7 +141,7 @@ const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
             <div style={{ backgroundColor: colors.terracotta + '15', borderColor: colors.terracotta + '30' }} className="p-6 md:p-8 rounded-[2rem] border flex gap-5 items-start mt-10">
               <AlertCircle size={28} style={{ color: colors.terracotta }} className="shrink-0 mt-0.5" />
               <div>
-                <span className="block font-black text-[10px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.terracotta }}>تذكير مهم</span>
+                <span className="block font-black text-[14px] mb-2 uppercase tracking-[0.1em]" style={{ color: colors.terracotta }}>تذكير مهم</span>
                 <p className="text-[#292926] font-bold text-lg m-0 leading-relaxed">
                   قواعد الدخول والرسوم ممكن تتغير، عشان كده دايماً راجع الموقع الرسمي للـ ETA تاني قبل السفر بوقت قصير.
                 </p>
@@ -238,7 +238,7 @@ const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
                 <Info size={28} />
               </div>
               <div>
-                <span className="block font-black text-xs mb-3 uppercase tracking-[0.2em]" style={{ color: colors.yellow }}>ملاحظة سريعة</span>
+                <span className="block font-black text-[14px] mb-3 uppercase tracking-[0.2em]" style={{ color: colors.yellow }}>ملاحظة سريعة</span>
                 <p className="text-white/90 leading-relaxed font-medium m-0 text-lg">
                   معظم الأكل السريلانكي حراق، حتى لو مكنش باين إنه حراق في المنيو، عشان كده يستاهل إنك تتأكد من الويتر قبل ما تطلب. لو مش عايز أكل حراق، سهل جداً تلاقي خيارات غربية زي البيتزا، المكرونة، والبرجر في مناطق سياحية كتير.
                 </p>
@@ -358,7 +358,7 @@ const PreTripPageAr: React.FC<PreTripPageProps> = ({ colors }) => {
       {/* --- CHAPTER 5: PACKING AND TRIP PREPARATION --- */}
       <section style={{ boxShadow: customShadow }} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden mb-8 p-8 md:p-14">
         <div className="mb-10">
-          <span className="text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-400">
+          <span className="text-[14px] font-bold tracking-[0.4em] uppercase mb-4 block text-gray-600">
             الفصل 5
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
